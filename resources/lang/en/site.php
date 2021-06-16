@@ -48,9 +48,11 @@ return
 ],
 
 'massage'=> [
-    'add_success' => 'Data Saved Successfully',
-    'update_success' => 'Data Update Successfully',
-    'delete_success' => 'Data Delete Successfully',
+    'add_success'           => 'Data Saved Successfully',
+    'update_success'        => 'Data Update Successfully',
+    'delete_success'        => 'Data Delete Successfully',
+    'error'                 => 'Error',
+    'name_exists'           => 'Sorry Name Is Exists'
 ],
 
 ];// End Of Return

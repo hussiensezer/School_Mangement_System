@@ -27,6 +27,11 @@ class GradeController extends Controller
 
     public function store(StoreGradeRequest $request)
     {
+        if(Grade::where('name->ar', $request->name_ar)->orWhere('name->en',$request->name_en)->exists()) {
+            return redirect()->back()->withErrors([__('site.massage.error'),__('site.massage.name_exists')]);
+
+        }
+
        try{
            $validated = $request->validated();
            // Except Request Name And Name name_en To Re Assign For Name To Save Into DataBase
@@ -59,18 +64,24 @@ class GradeController extends Controller
 
     public function update(Request $request, Grade $grade)
     {
-        try{
-            $request_data = $request->except(["name_ar",'name_en']);
+        $grades =Grade::whereNotIn('id', [$request->id]);
 
-            $request_data['name'] = ['en' => $request->name_en, 'ar' => $request->name_ar];
-            $grade->update($request_data);
+        dd($grades);
+        //$grade = json_decode( $grade);
 
-            toastr()->success(__('site.massage.update_success'));
-            return redirect()->route('dashboard.grades.index');
-        }
-        catch (\Exception $e) {
-            return redirect()->back()->withErrors(['error' => $e->getMessage()] );
-        }
+
+//        try{
+//            $request_data = $request->except(["name_ar",'name_en']);
+//
+//            $request_data['name'] = ['en' => $request->name_en, 'ar' => $request->name_ar];
+//            $grade->update($request_data);
+//
+//            toastr()->success(__('site.massage.update_success'));
+//            return redirect()->route('dashboard.grades.index');
+//        }
+//        catch (\Exception $e) {
+//            return redirect()->back()->withErrors(['error' => $e->getMessage()] );
+//        }
     }// End Of update
 
 

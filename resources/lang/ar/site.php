@@ -50,10 +50,13 @@ return
 ],
 
 'massage'=> [
-    'add_success' => 'تم حفظ البيانات بنجاح',
-    'update_success' => 'تم تعديل البيانات بنجاح',
-    'delete_success' => 'تم حذف البيانات بنجاح',
-
+    'add_success'           => 'تم حفظ البيانات بنجاح',
+    'update_success'        => 'تم تعديل البيانات بنجاح',
+    'delete_success'        => 'تم حذف البيانات بنجاح',
+    'error'                 => 'خطاء',
+    'name_exists'           => " للاسف الاسم موجد بفعل"
 ],
+
+
 
 ];// End Of Return

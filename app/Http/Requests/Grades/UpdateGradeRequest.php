@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests\Grades;
 
+use App\Models\Grade;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 class UpdateGradeRequest extends FormRequest
@@ -21,8 +22,10 @@ class UpdateGradeRequest extends FormRequest
      *
      * @return array
      */
-    public function rules(Request $request)
+    public function rules(Request $request, Grade $grade)
     {
+
+
         return [
 
         ];

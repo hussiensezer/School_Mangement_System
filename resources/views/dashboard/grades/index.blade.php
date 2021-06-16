@@ -121,7 +121,7 @@
                                                                   >{{ $grade->notes }}</textarea>
                                                     </div>
                                                     <br><br>
-
+                                                    <input type="hidden" name="id" value="{{$grade->id}}">
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary"
                                                                 data-dismiss="modal"> @lang("site.global.close")</button>
