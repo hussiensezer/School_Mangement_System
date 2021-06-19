@@ -32,15 +32,15 @@
                     </li>
                     <!-- menu item calendar-->
                     <li>
-                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#calendar-menu">
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#classes-menu">
                             <div class="pull-left"><i class="ti-calendar"></i><span
-                                    class="right-nav-text">@lang('site.sidebar.classes')</span></div>
+                                    class="right-nav-text">@lang('site.sidebar.classroom')</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
                         </a>
-                        <ul id="calendar-menu" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="calendar.html">Events Calendar </a> </li>
-                            <li> <a href="calendar-list.html">List Calendar</a> </li>
+                        <ul id="classes-menu" class="collapse" data-parent="#sidebarnav">
+                            <li> <a href="{{route("dashboard.classrooms.index")}}">@lang("site.sidebar.classrooms_list") </a> </li>
+
                         </ul>
                     </li>
 {{--                    <!-- menu item todo-->--}}

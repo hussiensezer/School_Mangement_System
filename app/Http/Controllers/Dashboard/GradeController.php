@@ -7,6 +7,7 @@ use App\Http\Requests\Grades\UpdateGradeRequest;
 use App\Models\Grade;
 use App\Http\Requests\Grades\StoreGradeRequest;
 
+use CodeZero\UniqueTranslation\UniqueTranslationRule;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -62,26 +63,22 @@ class GradeController extends Controller
         //
     }// End Of edit
 
-    public function update(Request $request, Grade $grade)
+    public function update(UpdateGradeRequest $request, Grade $grade)
     {
-        $grades =Grade::whereNotIn('id', [$request->id]);
 
-        dd($grades);
-        //$grade = json_decode( $grade);
+        try{
+            $validated = $request->validated();
+            $request_data = $request->except(["name[ar]",'name[en]']);
 
+            $request_data['name'] = ['en' => $request->name['en'], 'ar' => $request->name['ar']];
+            $grade->update($request_data);
 
-//        try{
-//            $request_data = $request->except(["name_ar",'name_en']);
-//
-//            $request_data['name'] = ['en' => $request->name_en, 'ar' => $request->name_ar];
-//            $grade->update($request_data);
-//
-//            toastr()->success(__('site.massage.update_success'));
-//            return redirect()->route('dashboard.grades.index');
-//        }
-//        catch (\Exception $e) {
-//            return redirect()->back()->withErrors(['error' => $e->getMessage()] );
-//        }
+            toastr()->success(__('site.massage.update_success'));
+            return redirect()->route('dashboard.grades.index');
+        }
+        catch (\Exception $e) {
+            return redirect()->back()->withErrors(['error' => $e->getMessage()] );
+        }
     }// End Of update
 
 

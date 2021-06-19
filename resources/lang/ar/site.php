@@ -3,14 +3,34 @@ return
 [
 //   Start Global Arabic
 
+'global' => [
+    'action'                => 'اجراء',
+    'add'                   => 'اضافة',
+    'delete'                => 'حذف',
+    'edit'                  => 'تعديل',
+    'close'                 => 'غلاق',
+    'warning_delete'        => 'هل انت متاكد من عملية الحذف',
+    'no_data_to_show'       =>  'لا توجد بيانات للعرض',
+    'choose'                => 'اختار',
+
+
+],
+
+'massage'=> [
+    'add_success'           => 'تم حفظ البيانات بنجاح',
+    'update_success'        => 'تم تعديل البيانات بنجاح',
+    'delete_success'        => 'تم حذف البيانات بنجاح',
+    'error'                 => 'خطاء',
+    'name_exists'           => " للاسف الاسم موجد بفعل"
+],
 'sidebar' => [
     'languages'             => 'اللغات',
     'dashboard'             => 'لوحة التحكم',
     'school_grades'         => 'المراحل الدراسية',
     'primary'               => 'الابتدائى',
-    'secondary'             => 'ألقانوية',
+    'secondary'             => 'الثانوية',
     'grades_list'           => 'قائمة المراحل الدراسية',
-    'classes'               => 'الفصول',
+    'classroom'             => 'الفصول الدراسية',
     'sections'              => 'الاقسام',
     'students'              => 'الطلاب' ,
     'teachers'              => 'المدرسين',
@@ -18,10 +38,11 @@ return
     'accounts'              => 'الحساب',
     'attendance'            => 'الحضور و الغياب',
     'exams'                 => 'الامتحانات',
-    'library'               => 'المطتبة',
+    'library'               => 'المكتبة',
     'online_classes'        => 'حصص اونلاين  ',
     'setting'               =>  'العدادات',
     'users'                 =>  'المستخدمين',
+    'classrooms_list'       => 'قائمة الفصول الدراسية',
 ],
 
 'grades' => [
@@ -34,29 +55,23 @@ return
         'grade_name'        => 'اسم المرحلة بلغة العربية',
     ],
     'en' => [
-        'grade_name'        =>  'لسم المرحلة بلغة الانجليزية',
+        'grade_name'        =>  'اسم المرحلة بلغة الانجليزية',
     ]
 ],
 
-'global' => [
-    'action'                => 'اجراء',
-    'add'                   => 'اضافة',
-    'delete'                => 'حذف',
-    'edit'                  => 'تعديل',
-    'close'                 => 'غلاق',
-    'warning_delete'        => 'هل انت متاكد من عملية الحذف',
-    'no_data_to_show'       =>  'لا توجد بيانات للعرض',
-
+'classroom' => [
+    'add_classroom'             => 'اضافة فصل دراسى ',
+    'edit_classroom'            => 'تعديل  الفصل دراسى ',
+    'delete_classroom'          => 'حذف  الفصل دراسى ',
+    'classroom_name'            => ' اسم  الفصل دراسى ',
+    'classroom_notes'           => 'ملاحظات',
+    'ar' => [
+        'classroom_name'        => 'اسم  الفصل دراسى بلغة العربية',
+    ],
+    'en' => [
+        'classroom_name'        =>  'اسم  الفصل دراسى بلغة الانجليزية',
+    ]
 ],
-
-'massage'=> [
-    'add_success'           => 'تم حفظ البيانات بنجاح',
-    'update_success'        => 'تم تعديل البيانات بنجاح',
-    'delete_success'        => 'تم حذف البيانات بنجاح',
-    'error'                 => 'خطاء',
-    'name_exists'           => " للاسف الاسم موجد بفعل"
-],
-
 
 
 ];// End Of Return
