@@ -27,9 +27,10 @@ class StoreClassRoomRequest extends FormRequest
      */
     public function rules(Request $request)
     {
-        $rules = ["grade_id" => 'required|exists:grades,id'];
+//        |' . Rule::unique('classrooms', 'name->' . $locale)->ignore($request->grade_id, 'grade_id')
+        $rules = ["Lists.*.grade_id" => 'required|exists:grades,id'];
         foreach( LaravelLocalization::getSupportedLanguagesKeys() as $locale) {
-            $rules += ['name.' . $locale => 'required|' . Rule::unique('classrooms', 'name->' . $locale)->ignore($request->grade_id, 'grade_id')];
+            $rules += ["Lists.*.name_" . $locale  => 'required'];
         }
         return $rules;
     }

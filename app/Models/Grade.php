@@ -15,4 +15,11 @@ class Grade extends Model
     public function classrooms(){
         return $this->hasMany(ClassRoom::class);
     }
+    public function sections(){
+        return $this->hasMany(Section::class);
+    }
+    public function getNameAttribute($name) {
+
+        return ucfirst($name);
+    }
 }

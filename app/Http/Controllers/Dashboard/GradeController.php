@@ -14,7 +14,6 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 class GradeController extends Controller
 {
-
     public function index()
     {
         $grades = Grade::get()->all();
@@ -28,11 +27,6 @@ class GradeController extends Controller
 
     public function store(StoreGradeRequest $request)
     {
-        if(Grade::where('name->ar', $request->name_ar)->orWhere('name->en',$request->name_en)->exists()) {
-            return redirect()->back()->withErrors([__('site.massage.error'),__('site.massage.name_exists')]);
-
-        }
-
        try{
            $validated = $request->validated();
            // Except Request Name And Name name_en To Re Assign For Name To Save Into DataBase
@@ -82,10 +76,21 @@ class GradeController extends Controller
     }// End Of update
 
 
-    public function destroy(Grade $grade)
-    {
+    public function destroy(Grade $grade){
+
+
+        $children = $grade->classrooms()->pluck("grade_id")->unique();
+
+      if($children->count() > 0) {
+          toastr()->error(__('site.massage.delete_classes_first'));
+            return redirect()->route('dashboard.grades.index');
+      }else {
         $grade = $grade->findOrFail($grade->id)->delete();
         toastr()->success(__('site.massage.delete_success'));
         return redirect()->route('dashboard.grades.index');
+      }
+
     } // End Of destroy
+
+
 }
