@@ -49,7 +49,9 @@ return
     'setting'               =>  'العدادات',
     'users'                 =>  'المستخدمين',
     'classrooms_list'       => 'قائمة الصفوف الدراسية',
-    'sections_list'         => 'قائمة الفصل الدراسية'
+    'sections_list'         => 'قائمة الفصل الدراسية',
+    'parents_list'          => 'قائمة اوليا الامور',
+    'add_parent'            => 'اضافة ولى امر',
 ],
 
 'grades' => [
@@ -99,5 +101,47 @@ return
         'section_name'        =>  'اسم  الفصل  بلغة الانجليزية',
     ]
 ],
+'parent' => [
+    'add_parent'             => 'اضافة ولى امر',
+    'edit_parent'            => 'تعديل  ولى امر',
+    'delete_parent'          => 'حذف  اولى امر',
+    'step1'                  => '   معلومات الاب',
+    'step2'                  => '  معلومات الام',
+    'step3'                  => '   تاكيد المعلومات',
+    'next_step'              => '   الخطوة التالية',
+    'previous_step'          => '  الخطوة السابقة',
+    'saved'                  => ' حفظ البيانات',
+    'email'                  => 'البريد الالكترونى',
+    'password'               => 'البسورد',
+    'national_id_father'     => 'الرقم القومى للاب',
+    'national_id_mother'     => 'الرقم القومى الام',
+    'passport_id_father'     => '  الباسبور الاب',
+    'passport_id_mother'     => 'باسبور الام',
+    'phone_father'           => 'هاتف الاب',
+    'phone_mother'           => 'هاتف الام',
+    'religion_father'        => 'ديانة الاب',
+    'religion_mother'        => 'ديانة الام',
+    'address_father'         => 'عنوان الاب',
+    'address_mother'         => 'عنوان الام',
+    'nationality_father'     => "جنسية الاب",
+    'nationality_mother'     => "جنسية الام",
+    'bloodType_father'       => "فصيلة دم الاب",
+    'bloodType_mother'       => "فصيلة دم الام",
+    'ar' => [
+        'father_name'        => 'اسم  الاب  بلغة العربية',
+        'father_job'         => '  الوظيفة  بلغة العربية',
+        'mother_name'        => 'اسم  الام  بلغة العربية',
+        'mother_job'         => 'اسم  الوظيفة  بلغة العربية',
+    ],
+    'en' => [
+        'father_name'        =>  'اسم  الاب  بلغة الانجليزية',
+        'father_job'         =>  '  الوظيفة  بلغة الانجليزية',
+        'mother_name'        =>  'اسم  الام  بلغة الانجليزية',
+        'mother_job'         =>  'اسم  الوظيفة  بلغة الانجليزية',
+    ]
+
+],
+
+
 
 ];// End Of Return

@@ -117,9 +117,8 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="table" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="data-html-table.html">Data html table</a> </li>
-                            <li> <a href="data-local.html">Data local</a> </li>
-                            <li> <a href="data-table.html">Data table</a> </li>
+                            <li> <a href="#">@lang("site.sidebar.parents_list")</a> </li>
+                            <li> <a href="{{URL("addParent")}}">@lang("site.sidebar.add_parent")</a> </li>
                         </ul>
                     </li>
 {{--                    <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">More Pages</li>--}}

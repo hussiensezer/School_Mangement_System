@@ -20,7 +20,15 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'l
         Route::resource('sections','SectionController');
 
 
+
     });
+    // Parents Route
+    Route::view("addParent", 'livewire.parentForm');
+    Route::get("test", function(){
+
+        return view("dashboard/test");
+    });
+
 
 });
 

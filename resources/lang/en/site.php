@@ -50,6 +50,8 @@ return
     'users'                     => 'Users',
     'classrooms_list'           => 'Class Rooms Lists',
     'sections_list'             => 'Sections Lists',
+    'parents_list'              => ' Parents Lists',
+    'add_parent'                => 'Add Parent',
 
 ],
 'grades' => [
@@ -97,6 +99,45 @@ return
     'en' => [
         'section_name'        =>  'Section Name In English',
     ]
+],
+'parent' => [
+    'add_parent'             => 'Add Parent',
+    'edit_parent'            => 'Edit Parent',
+    'delete_parent'          => 'Delete Parent',
+    'step1'                  => "Father Information's ",
+    'step2'                  => "Mother Information's ",
+    'step3'                  => "Confirm Information's ",
+    'next_step'              => 'Next Step',
+    'previous_step'          => 'Previous Step',
+    'saved'                  => 'Save Data',
+    'email'                  => 'Email',
+    'password'               => 'Password',
+    'national_id_father'     => 'National Id Of Father',
+    'national_id_mother'     => 'National Id Of Mother',
+    'passport_id_father'     => 'Passport Of Father',
+    'passport_id_mother'     => 'Passport Of Mother',
+    'phone_father'           => 'Phone Father',
+    'phone_mother'           => 'Phone Mother',
+    'religion_father'        => 'Religion father',
+    'religion_mother'        => 'Religion Mother',
+    'address_father'         => 'Address Father',
+    'address_mother'         => 'Address Mother',
+    'nationality_father'     => "Nationality Father",
+    'nationality_mother'     => "Nationality Mother",
+    'bloodType_father'       => "Blood Type Of Father",
+    'bloodType_mother'       => "Blood Type Of Mother",
+    'ar' => [
+        'father_name'        => 'Father Name In Arabic',
+        'father_job'         => 'Father Job In Arabic',
+        'mother_name'        => 'Mother Name In Arabic',
+        'mother_job'         => 'Mother Job In Arabic',
+    ],
+    'en' => [
+        'father_name'        =>  'Father Name In English',
+        'father_job'         =>  'Father Job In English',
+        'mother_name'        =>  'Mother Name In English',
+        'mother_job'         =>  'Mother Job In English',
+    ],
 ],
 
 ];// End Of Return
