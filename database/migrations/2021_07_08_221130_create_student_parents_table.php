@@ -19,33 +19,35 @@ class CreateStudentParentsTable extends Migration
             $table->string("password");
             // Father Information's
             $table->string("father_name");
+            $table->string("father_job");
             $table->string("national_id_father");
             $table->string("passport_id_father");
             $table->string("phone_father");
             $table->unsignedBigInteger('nationality_father_id');
-            $table->unsignedBigInteger('blood_type_father_id');
+            $table->unsignedBigInteger('bloodType_father_id');
             $table->unsignedBigInteger('religion_father_id');
             $table->string("address_father");
 
             // Mother Information's
             $table->string("mother_name");
+            $table->string("mother_job");
             $table->string("national_id_mother");
             $table->string("passport_id_mother");
             $table->string("phone_mother");
             $table->unsignedBigInteger('nationality_mother_id');
-            $table->unsignedBigInteger('blood_type_mother_id');
+            $table->unsignedBigInteger('bloodType_mother_id');
             $table->unsignedBigInteger('religion_mother_id');
             $table->string("address_mother");
             $table->timestamps();
 
             // Foreign Key Father
            $table->foreign("nationality_father_id")->references("id")->on("nationalities")->onDelete("cascade");
-           $table->foreign("blood_type_father_id")->references("id")->on("blood_types")->onDelete("cascade");
+           $table->foreign("bloodType_father_id")->references("id")->on("blood_types")->onDelete("cascade");
            $table->foreign("religion_father_id")->references("id")->on("religions")->onDelete("cascade");
 
             // Foreign Key Mother
             $table->foreign("nationality_mother_id")->references("id")->on("nationalities")->onDelete("cascade");
-            $table->foreign("blood_type_mother_id")->references("id")->on("blood_types")->onDelete("cascade");
+            $table->foreign("bloodType_mother_id")->references("id")->on("blood_types")->onDelete("cascade");
             $table->foreign("religion_mother_id")->references("id")->on("religions")->onDelete("cascade");
         });
     }

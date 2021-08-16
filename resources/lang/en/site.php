@@ -17,6 +17,17 @@ return
     'deactivate'                => 'Deactivate',
     'active'                    => ' Active',
     'choose_status'             => ' Choose Status',
+    'gender'                    => 'Gender',
+    'joined_date'               => 'Joined Date',
+    'name_ar'                   => 'Name By Arabic  ' ,
+    'name_en'                   => 'Name By English  ' ,
+    'email'                     => ' Email Address' ,
+    'password'                  => 'Password' ,
+    'address'                   => 'Address' ,
+    'specialization'            => 'Specialization' ,
+    'gender'                    => 'Gender' ,
+    'phone'                     => 'Phone' ,
+
 
 ],
 
@@ -26,7 +37,8 @@ return
     'delete_success'           => 'Data Delete Successfully',
     'error'                    => 'Error',
     'name_exists'              => 'Sorry Name Is Exists',
-    'delete_classes_first'     => "You Have To Delete Classes room First"
+    'delete_classes_first'     => "You Have To Delete Classes room First",
+    'sure_save_data'           => "Are You Sure Want Save Data ?",
 
 ],
 'sidebar' => [
@@ -38,6 +50,7 @@ return
     'grades_list'               => 'Grades List',
     'classroom'                 => 'Class Room',
     'sections'                  => 'Sections',
+    'specializations'      => ' Specializations',
     'students'                  => 'Students' ,
     'teachers'                  => 'Teachers',
     'parents'                   => 'Parents',
@@ -52,6 +65,8 @@ return
     'sections_list'             => 'Sections Lists',
     'parents_list'              => ' Parents Lists',
     'add_parent'                => 'Add Parent',
+    'specializations_list'      => ' Specializations List',
+    'teachers_list'              => ' Teachers List',
 
 ],
 'grades' => [
@@ -100,6 +115,37 @@ return
         'section_name'        =>  'Section Name In English',
     ]
 ],
+'specialization' => [
+    'add_specialization'             => 'Add Specialization',
+    'edit_specialization'            => 'Edit Specialization  ',
+    'delete_specialization'          => '  Delete Specialization',
+    'specialization_name'            => ' Name Specialization  ',
+    'specializations'                => '  Specializations',
+    'specialization'                 => '  Specialization',
+    'ar' => [
+        'specialization_name'        => 'specialization Name In Arabic',
+    ],
+    'en' => [
+        'specialization_name'        =>  'specialization Name In English',
+    ]
+],
+
+'teacher' => [
+    'add_teacher'             => 'Add Teacher ',
+    'edit_teacher'            => ' Edit Teacher ',
+    'delete_teacher'          => ' Delete Teacher ',
+    'teacher_name'            => '  Teacher Name ',
+    'specialization_name'     => ' Specialization Name  ',
+    'teachers'                => ' Teachers ',
+    'ar' => [
+        'specialization_name' => '  Specialization Name By Arabic ',
+        'teacher_name'        => '  Teacher Name By Arabic   ',
+    ],
+    'en' => [
+        'specialization_name'  =>  ' Specialization Name By English',
+        'teacher_name'         =>  ' Teacher Name By English    ',
+    ],
+    ],
 'parent' => [
     'add_parent'             => 'Add Parent',
     'edit_parent'            => 'Edit Parent',
@@ -110,6 +156,7 @@ return
     'next_step'              => 'Next Step',
     'previous_step'          => 'Previous Step',
     'saved'                  => 'Save Data',
+    'update'                 => 'update Data',
     'email'                  => 'Email',
     'password'               => 'Password',
     'national_id_father'     => 'National Id Of Father',
@@ -126,6 +173,9 @@ return
     'nationality_mother'     => "Nationality Mother",
     'bloodType_father'       => "Blood Type Of Father",
     'bloodType_mother'       => "Blood Type Of Mother",
+    'parent_attachments'     => 'Parent Attachments',
+    'father_name'            => ' Father Name',
+    'mother_name'            => 'Mother Name ',
     'ar' => [
         'father_name'        => 'Father Name In Arabic',
         'father_job'         => 'Father Job In Arabic',

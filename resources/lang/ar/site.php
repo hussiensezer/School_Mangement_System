@@ -17,6 +17,16 @@ return
     'deactivate'            => 'غير مفعل',
     'active'                => ' مفعل',
     'choose_status'         => ' اختار الحالة',
+    "gender"                => 'النوع' ,
+    "joined_date"           => 'تاريخ الالتحاق',
+    'name_ar'               => 'الاسم باللغة العربية' ,
+    'name_en'               => 'الاسم باللغة الانجليزية' ,
+    'email'                 => 'البريد اللكترونى' ,
+    'password'              => 'البسورد' ,
+    'address'               => 'العنوان' ,
+    'specialization'        => 'التخصص' ,
+    'gender'                => 'النوع' ,
+    'phone'                 => 'الهاتف' ,
 
 
 ],
@@ -27,7 +37,8 @@ return
     'delete_success'        => 'تم حذف البيانات بنجاح',
     'error'                 => 'خطاء',
     'name_exists'           => " للاسف الاسم موجد بفعل",
-    'delete_classes_first'    => "يجب حذف الفصول الدراسية اولا "
+    'delete_classes_first'  => "يجب حذف الفصول الدراسية اولا ",
+    'sure_save_data'        => "هل انت متاكد من حفظ البيانات ؟",
 ],
 'sidebar' => [
     'languages'             => 'اللغات',
@@ -38,6 +49,8 @@ return
     'grades_list'           => 'قائمة المراحل الدراسية',
     'classroom'             => 'الصفوف الدراسية',
     'sections'              => 'الفصول المدرسية',
+
+    'specializations'       => ' التخصصات',
     'students'              => 'الطلاب' ,
     'teachers'              => 'المدرسين',
     'parents'               => 'اوليا الامور',
@@ -52,6 +65,8 @@ return
     'sections_list'         => 'قائمة الفصل الدراسية',
     'parents_list'          => 'قائمة اوليا الامور',
     'add_parent'            => 'اضافة ولى امر',
+    'specializations_list'  => ' قائمة التخصصات',
+    'teachers_list'         => '  قائمة المدرسين',
 ],
 
 'grades' => [
@@ -101,16 +116,49 @@ return
         'section_name'        =>  'اسم  الفصل  بلغة الانجليزية',
     ]
 ],
+
+'specialization' => [
+    'add_specialization'             => 'اضافة تخصص',
+    'edit_specialization'            => 'تعديل  التخصص',
+    'delete_specialization'          => 'حذف  التخصص',
+    'specialization_name'            => ' اسم  التخصص',
+    'specializations'                 => '  التخصصات',
+    'specialization'                 => '  تخصص',
+    'ar' => [
+        'specialization_name'        => 'اسم  التخصص  بلغة العربية',
+    ],
+    'en' => [
+        'specialization_name'        =>  'اسم  التخصص  بلغة الانجليزية',
+    ]
+],
+
+'teacher' => [
+    'add_teacher'             => 'اضافة مدرس',
+    'edit_teacher'            => 'تعديل  مدرس',
+    'delete_teacher'          => 'حذف  مدرس',
+    'teacher_name'            => ' اسم  مدرس',
+    'specialization_name'     => ' اسم  التخصص',
+    'teachers'                => '  المدرسين',
+    'ar' => [
+        'specialization_name' => 'اسم  التخصص  بلغة العربية',
+        'teacher_name'        => 'اسم  المدرس  بلغة العربية',
+    ],
+    'en' => [
+        'specialization_name'  =>  'اسم  التخصص  بلغة الانجليزية',
+        'teacher_name'         =>  'اسم  المدرس  بلغة الانجليزية',
+    ]
+],
 'parent' => [
     'add_parent'             => 'اضافة ولى امر',
     'edit_parent'            => 'تعديل  ولى امر',
     'delete_parent'          => 'حذف  اولى امر',
     'step1'                  => '   معلومات الاب',
     'step2'                  => '  معلومات الام',
-    'step3'                  => '   تاكيد المعلومات',
+    'step3'                  => ' ارفاق ملفات وحفظ البيانات',
     'next_step'              => '   الخطوة التالية',
     'previous_step'          => '  الخطوة السابقة',
     'saved'                  => ' حفظ البيانات',
+    'update'                 => 'تعديل البيانات ',
     'email'                  => 'البريد الالكترونى',
     'password'               => 'البسورد',
     'national_id_father'     => 'الرقم القومى للاب',
@@ -123,10 +171,13 @@ return
     'religion_mother'        => 'ديانة الام',
     'address_father'         => 'عنوان الاب',
     'address_mother'         => 'عنوان الام',
+    'father_name'            => ' اسم الاب',
+    'mother_name'            => 'اسم الام',
     'nationality_father'     => "جنسية الاب",
     'nationality_mother'     => "جنسية الام",
     'bloodType_father'       => "فصيلة دم الاب",
     'bloodType_mother'       => "فصيلة دم الام",
+    'parent_attachments'     => 'مرفقات ولى الامر ',
     'ar' => [
         'father_name'        => 'اسم  الاب  بلغة العربية',
         'father_job'         => '  الوظيفة  بلغة العربية',

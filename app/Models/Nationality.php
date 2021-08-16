@@ -12,4 +12,5 @@ class Nationality extends Model
     public $translatable = ['name'];
     protected $guarded = [];
     public $timestamps = true;
+
 }

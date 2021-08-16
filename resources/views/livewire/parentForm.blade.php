@@ -41,5 +41,5 @@
 @section('js')
 
 
-    @livewireScripts
+    <script src="{{url("public/vendor/livewire/livewire.js")}}"></script>
 @endsection

@@ -73,6 +73,16 @@
 
                     <!-- menu font icon-->
                     <li>
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#Matrieal">
+                            <div class="pull-left"><i class="ti-home"></i><span class="right-nav-text">@lang('site.sidebar.specializations')</span></div>
+                            <div class="pull-right"><i class="ti-plus"></i></div>
+                            <div class="clearfix"></div>
+                        </a>
+                        <ul id="Matrieal" class="collapse" data-parent="#sidebarnav">
+                            <li> <a href="{{route("dashboard.specializations.index")}}">@lang("site.sidebar.specializations_list") </a> </li>
+                        </ul>
+                    </li>
+                    <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#font-icon">
                             <div class="pull-left"><i class="ti-home"></i><span class="right-nav-text">@lang('site.sidebar.students')</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
@@ -93,20 +103,13 @@
 {{--                    </li>--}}
                     <!-- menu item Form-->
                     <li>
-                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#Form">
+                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#teacher">
                             <div class="pull-left"><i class="ti-files"></i><span class="right-nav-text">@lang('site.sidebar.teachers')</span></div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
                         </a>
-                        <ul id="Form" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="editor.html">Editor</a> </li>
-                            <li> <a href="editor-markdown.html">Editor Markdown</a> </li>
-                            <li> <a href="form-input.html">Form input</a> </li>
-                            <li> <a href="form-validation-jquery.html">form validation jquery</a> </li>
-                            <li> <a href="form-wizard.html">form wizard</a> </li>
-                            <li> <a href="form-repeater.html">form repeater</a> </li>
-                            <li> <a href="input-group.html">input group</a> </li>
-                            <li> <a href="toastr.html">toastr</a> </li>
+                        <ul id="teacher" class="collapse" data-parent="#sidebarnav">
+                            <li> <a href="{{route("dashboard.teachers.index")}}">@lang("site.sidebar.teachers_list")</a> </li>
                         </ul>
                     </li>
                     <!-- menu item table -->
@@ -117,8 +120,8 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="table" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="#">@lang("site.sidebar.parents_list")</a> </li>
-                            <li> <a href="{{URL("addParent")}}">@lang("site.sidebar.add_parent")</a> </li>
+                            <li> <a href="{{route("dashboard.parents.index")}}">@lang("site.sidebar.parents_list")</a> </li>
+                            <li> <a href="{{route("dashboard.parents.store")}}">@lang("site.sidebar.add_parent")</a> </li>
                         </ul>
                     </li>
 {{--                    <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">More Pages</li>--}}

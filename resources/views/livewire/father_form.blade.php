@@ -107,13 +107,13 @@
                     </div>
                     <div class="form-group col">
                         <label for="inputZip">@lang("site.parent.religion_father")</label>
-                        <select class="custom-select my-1 mr-sm-2" wire:model="Religion_father_id">
+                        <select class="custom-select my-1 mr-sm-2" wire:model="religion_father_id">
                             <option selected>@lang("site.global.choose")...</option>
                             @foreach($religions as $religion)
                                 <option value="{{$religion->id}}">{{$religion->name}}</option>
                             @endforeach
                         </select>
-                        @error('Religion_Father_id')
+                        @error('religion_father_id')
                         <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                     </div>
@@ -122,8 +122,8 @@
 
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">@lang("site.parent.address_father")</label>
-                    <textarea class="form-control"  id="exampleFormControlTextarea1" rows="4" wire:model="Address_father"></textarea>
-                    @error('Address_Father')
+                    <textarea class="form-control"  id="exampleFormControlTextarea1" rows="4" wire:model="address_father"></textarea>
+                    @error('address_father')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>

@@ -20,3 +20,4 @@
 @else
     <link href="{{ URL::asset('assets/css/ltr.css') }}" rel="stylesheet">
 @endif
+
